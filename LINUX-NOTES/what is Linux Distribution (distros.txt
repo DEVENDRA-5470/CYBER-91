@@ -1,0 +1,53 @@
+what is Linux Distribution (distros) ?
+A Linux distribution is simply a version of Linux packaged
+with its own tools default software and style.
+
+The engine is the Linux Kernal
+The car built around it (design,dashboard,features)
+is the distros.
+
+Ubuntu
+Kali - Linux
+Debian
+Fedora
+Arch
+CentOS/ Rocky
+Linux mint
+
+They differ in :
+	package manager(apt,yum,pacman)
+	default apps
+	target audience (kali=pentesting,ubuntu=general use
+	Debian=stable server,arch=power user)
+
+File System Hierarchy.
+The standard layout of all important system directories.
+
+/ : root dir : Top folder of everything .
+
+/bin : Basic cmd : ls ,cp,mv,mkdir
+
+/sbin :system/admin cmd : iptables , reboot
+
+/usr : where most apps are installed .
+
+/etc : All configuration files : passwd , hosts ,ssh.
+
+/var : File that change constantly : logs,cache,web data.
+
+/home : Each user,s personal folder.
+
+/root : Home folder for the root user (admin)
+
+/tmp  : Temporary files . Deleted at reboot.
+
+/opt : Manually installed big application Ex: chrome,firefox.
+
+/ lib and lib64 : system lib used by /bin.
+
+/dev : Device files. your hardware appears hear : disk USB terminal
+
+/media : External devices mounted (USB drives).
+
+/mnt : 
+

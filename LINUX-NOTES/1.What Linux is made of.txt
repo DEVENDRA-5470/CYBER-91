@@ -1,0 +1,98 @@
+1.What Linux is made of ?
+Linux is not just an operating system its a layered architecture like a stack.
+
+top -> bottom
+1.User application. (ls,cat,python,ngnix,docker)
+2.Shell
+3.System libraries (glibc)
+4.System calls
+5.kernal
+6.Hardware.
+
+1.User Application :
+ 	program that you run :
+ 		ls cat vim touch
+ 		docker container
+ 		ngnix
+2.Shell:
+ command interpreter
+ 	bash (.sh)
+ 	zsh
+ 	fish
+ Role : take your command,analyze , Expand variables , pass request to kernel via system calls.
+
+3.System libraries (glibc) :
+Program do not directly talk to the kernel they use libraries.
+glibc -> make system call (low-level api) -> kernel does actual job.
+
+4.System Calls:
+These are the API of kernel.
+
+Example :
+ 	open() -> Open a file or directories  and return a file handler.
+ 	read() : Reads bytes from a file descriptor into memory.
+ 	fork() Create new child process by duplicating the current process.
+ 	exec() / execve() -> Replace the current process with new program
+Everything you do hits syscall behind the scene.
+
+5.Kernel :
+The core control everything (the boss):
+ 	CPU scheduling
+ 	Memory management
+ 	Networking
+ 	File system
+ 	Device Drivers
+ 	Security(permissions isolation.)
+
+6.Hardware.
+ 	CPU
+ 	RAM
+ 	MOUSE
+ 	HARD-DISK
+ 	KEYBORAD
+
+1.Kernal Space and User space.
+**1.Kernel Space:**
+
+	inside the kernel
+
+ 	 who runs here ?
+kernel code
+ 		Device Driver
+ 		Core OS process
+ 	Privileges:
+ 		full access hardware , memory ,CPU.
+ 	if kernel crash -> whole system dies.
+
+**1.User Space:**
+
+ 	Outside the kernel where normal apps run.
+
+ 	 who runs here ?
+bash
+ 		python
+ 		chrome
+ 		docker
+ 		server
+ 		programs
+
+ 	 Privileges:
+ 		limited : Cannot touch hardware directly.
+
+System call (Syscall): A gateway (controlled door) though which user programs talk to the Linux kernel.
+
+glibc : it is a big helper library that gives programs basic function like open file,read,write,print,create process use memory.
+
+EASY ANALOGY:
+kernel : Government (Control everything)
+
+ 	Application : Citizen(must follow rules)
+ 	Hardware : Road, Power, building
+ 	System call : legal requests citizen submit to government.
+
+
+ 
+
+
+
+ 

@@ -1,0 +1,17 @@
+.git
+.ipynb_checkpoints
+1nov-variables.ipynb
+4-nov-operators.ipynb
+cred.txt
+Data-structure collections.ipynb
+Dictionary.ipynb
+Dummy
+Error or Exception handling.ipynb
+LINUX-NOTES
+list.ipynb
+loops_in_python.ipynb
+Modules or libraries.ipynb
+python
+sets.ipynb
+testing
+Untitled.ipynb
